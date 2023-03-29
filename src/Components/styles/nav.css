@@ -1,0 +1,16 @@
+.nav {
+  background-color: #2d2727;
+  min-height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  margin: auto;
+}
+.nav > h2 {
+  background-color: #2d2727 !important;
+}
+
+.white_col{
+    color: white;
+}
