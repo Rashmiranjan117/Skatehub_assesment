@@ -14,3 +14,20 @@
 .white_col{
     color: white;
 }
+
+.nav_left{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  /* border: 1px solid white; */
+  width: 35%;
+  color: white;
+}
+
+.nav_left a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  box-sizing: border-box;
+}
