@@ -8,7 +8,7 @@ const ProtectedRoute = ({ children }) => {
   const toast = useToast();
   const navigate = useNavigate();
   const token = cookie.get("authtoken");
-  console.log(token);
+  // console.log(token);
   if (!token) {
     toast({
       status: "warning",

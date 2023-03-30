@@ -1,8 +1,10 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
+import AddNew from "../Pages/AddNew";
 import DashBoards from "../Pages/DashBoards";
 import Login from "../Pages/Login";
 import Signup from "../Pages/Signup";
+import UpdateDelete from "../Pages/UpdateDelete";
 import ProtectedRoute from "./ProtectedRoute";
 const AllRoutes = () => {
   return (
@@ -12,6 +14,22 @@ const AllRoutes = () => {
         element={
           <ProtectedRoute>
             <DashBoards />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/update"
+        element={
+          <ProtectedRoute>
+            <UpdateDelete />
+          </ProtectedRoute>
+        }
+      />
+      <Route
+        path="/add"
+        element={
+          <ProtectedRoute>
+            <AddNew />
           </ProtectedRoute>
         }
       />
