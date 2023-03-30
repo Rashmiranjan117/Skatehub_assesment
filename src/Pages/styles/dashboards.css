@@ -1,0 +1,16 @@
+.dashboards {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.top {
+  width: 100%;
+  display: flex;
+}
+
+.table {
+  border-collapse: collapse;
+  width: 50%;
+}
