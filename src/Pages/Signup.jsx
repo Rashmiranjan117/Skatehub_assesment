@@ -14,7 +14,7 @@ import { Link, useNavigate } from "react-router-dom";
 import "./styles/common.css";
 
 const RegisterUser = (payload) => {
-  return axios.post("http://localhost:8080/auth/register", payload);
+  return axios.post("https://super-lime-vest.cyclic.app/auth/register", payload);
 };
 
 const Signup = () => {
