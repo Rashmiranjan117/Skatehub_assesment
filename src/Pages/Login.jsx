@@ -15,7 +15,7 @@ import "./styles/common.css";
 import Cookies from "universal-cookie";
 
 const LoginUser = (payload) => {
-  return axios.post("http://localhost:8080/auth/login", payload);
+  return axios.post("https://super-lime-vest.cyclic.app/auth/login", payload);
 };
 
 const Login = () => {

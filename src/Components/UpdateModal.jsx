@@ -19,7 +19,7 @@ import { AiOutlineEdit } from "react-icons/ai";
 const updateData = (payload, id, token, endpoint) => {
   return axios({
     method: "PATCH",
-    url: `http://localhost:8080/${endpoint}/update/${id}`,
+    url: `https://super-lime-vest.cyclic.app/${endpoint}/update/${id}`,
     data: JSON.stringify(payload),
     headers: {
       Authorization: token,

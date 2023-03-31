@@ -19,7 +19,7 @@ import "./styles/dashboards.css";
 const buyerGetData = (token) => {
   return axios({
     method: "GET",
-    url: "http://localhost:8080/buy/",
+    url: "https://super-lime-vest.cyclic.app/buy/",
     headers: {
       Authorization: token,
     },
@@ -29,7 +29,7 @@ const buyerGetData = (token) => {
 const sellerGetData = (token) => {
   return axios({
     method: "GET",
-    url: "http://localhost:8080/sell/",
+    url: "https://super-lime-vest.cyclic.app/sell/",
     headers: {
       Authorization: token,
     },

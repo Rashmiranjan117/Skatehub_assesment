@@ -10,7 +10,7 @@ import UpdateModal from "../Components/UpdateModal";
 const buyerGetData = (token) => {
   return axios({
     method: "GET",
-    url: "http://localhost:8080/buy/",
+    url: "https://super-lime-vest.cyclic.app/buy/",
     headers: {
       Authorization: token,
     },
@@ -20,7 +20,7 @@ const buyerGetData = (token) => {
 const DelteData = (id, token, endpoint) => {
   return axios({
     method: "DELETE",
-    url: `http://localhost:8080/${endpoint}/update/${id}`,
+    url: `https://super-lime-vest.cyclic.app/${endpoint}/update/${id}`,
     headers: {
       Authorization: token,
     },
@@ -30,7 +30,7 @@ const DelteData = (id, token, endpoint) => {
 const sellerGetData = (token) => {
   return axios({
     method: "GET",
-    url: "http://localhost:8080/sell/",
+    url: "https://super-lime-vest.cyclic.app/sell/",
     headers: {
       Authorization: token,
     },

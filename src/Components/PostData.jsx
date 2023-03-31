@@ -19,7 +19,7 @@ import "./styles/add.css";
 const postBuyer = (payload, token) => {
   return axios({
     method: "POST",
-    url: "http:localhost:8080/buy/add",
+    url: "https://super-lime-vest.cyclic.app/buy/add",
     data: JSON.stringify(payload),
     headers: {
       Authorization: token,
@@ -30,7 +30,7 @@ const postBuyer = (payload, token) => {
 const postSeller = (payload, token) => {
   return axios({
     method: "POST",
-    url: "http:localhost:8080/sell/add",
+    url: "https://super-lime-vest.cyclic.app/sell/add",
     data: JSON.stringify(payload),
     headers: {
       Authorization: token,
