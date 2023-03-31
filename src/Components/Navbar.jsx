@@ -54,9 +54,9 @@ const Navbar = () => {
           <Link className="white_col" to="/add">
             <span>Add</span> <GrFormAdd />
           </Link>
-          <Link className="white_col" to="/update">
+          {/* <Link className="white_col" to="/update">
             <span>Edit/Delete</span> <AiOutlineEdit />
-          </Link>
+          </Link> */}
           <Menu>
             <MenuButton
               as={IconButton}
