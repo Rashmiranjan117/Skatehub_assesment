@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./styles/nav.css";
 import { Link, useNavigate } from "react-router-dom";
 import {
@@ -34,9 +34,14 @@ const Navbar = () => {
       title: "Logout Successfull.",
     });
 
-    cookie.clear("authtoken");
+    cookie.remove("authtoken");
     navigate("/login");
   };
+  // useEffect(() => {
+  //   if (!token) {
+  //     navigate("/login");
+  //   }
+  // }, [token]);
   return (
     <Box className="nav">
       <Heading className="white_col">Product Probe</Heading>
